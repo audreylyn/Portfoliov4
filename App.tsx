@@ -11,11 +11,10 @@ import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
-    <div className="relative sm:px-8 lg:px-12 max-w-7xl mx-auto px-5 bg-white overflow-hidden">
+    <div className="relative sm:px-8 lg:px-12 max-w-7xl mx-auto px-5 overflow-hidden">
       <Header />
       <main>
         <Hero />
-        <GiantName />
         <About />
         <FeaturedWork />
         <Approach />

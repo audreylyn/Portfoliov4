@@ -73,13 +73,13 @@ const Contact: React.FC = () => {
       
       {/* Footer */}
       <footer className="pt-16 border-t border-black/10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
-            <div className="md:col-span-2 pr-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16 text-center md:text-left">
+            <div className="md:col-span-2 md:pr-8">
                  <h4 className="text-xl font-bold tracking-tight mb-4">SAMANTHA JANA MEDINA</h4>
-                 <p className="text-black/60 text-sm leading-relaxed max-w-sm mb-6">
+                 <p className="text-black/60 text-sm leading-relaxed md:max-w-sm mb-6">
                     A dedicated Information Technology student with practical experience in network operations, system administration, and technical support. Building the future, one line of code at a time.
                  </p>
-                 <div className="flex gap-3">
+                 <div className="flex gap-3 justify-center md:justify-start">
                     {[
                         { icon: Linkedin, href: "#" },
                         { icon: Github, href: "#" },
@@ -111,8 +111,8 @@ const Contact: React.FC = () => {
             </div>
         </div>
 
-        <div className="pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-black/40 text-sm font-medium">© 2025 Samantha Jana Medina. All rights reserved.</p>
+        <div className="pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <p className="text-black/40 text-sm font-medium order-2 md:order-1">© 2025 Samantha Jana Medina. All rights reserved.</p>
             <button 
                 onClick={scrollToTop} 
                 className="group flex items-center gap-2 text-sm font-bold text-black/40 hover:text-black transition-colors px-4 py-2 rounded-full hover:bg-black/5"

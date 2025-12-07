@@ -25,6 +25,12 @@ const Header: React.FC = () => {
     { label: 'Contact', href: '#contact' },
   ];
 
+  const navLinks = [
+    { label: 'Internship', href: '#internship' },
+    { label: 'Outputs', href: '#outputs' },
+    { label: 'Contact', href: '#contact' },
+  ];
+
   return (
     <>
       <motion.header 
@@ -63,13 +69,30 @@ const Header: React.FC = () => {
             )}
           </button>
         </div>
-
-        {/* Separator line - hidden when menu is open to keep look clean */}
-        <motion.div 
-          animate={{ opacity: isMenuOpen ? 0 : 1 }}
-          className="mt-5 border-t border-black/15 hidden lg:block"
-        />
       </motion.header>
+
+      {/* Full Width Navigation Bar - Desktop */}
+      <motion.nav
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="hidden lg:block fixed bottom-0 left-0 right-0 z-50"
+      >
+        <div className="bg-[#0a0a1a] flex">
+          {navLinks.map((link, index) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="flex-1 py-5 text-center text-white text-sm font-medium tracking-wide hover:bg-white/10 transition-colors relative"
+            >
+              {link.label}
+              {index < navLinks.length - 1 && (
+                <span className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-6 bg-white/20"></span>
+              )}
+            </a>
+          ))}
+        </div>
+      </motion.nav>
 
       {/* Full Screen Mobile Menu Overlay */}
       <AnimatePresence>
