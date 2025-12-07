@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           {/* Desktop Info (Hidden on mobile/tablet) */}
           <div className="hidden lg:flex flex-col items-end text-right">
              <span className="text-xs font-semibold tracking-tight">Valenzuela City</span>
-             <span className="text-[13px] text-black/70">IT Student & OJT Intern</span>
+             <span className="text-[13px] text-black/70">Tongco Street, Maysan Road</span>
           </div>
 
           {/* Mobile/Tablet Menu Toggle */}

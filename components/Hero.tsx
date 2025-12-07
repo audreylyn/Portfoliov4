@@ -54,8 +54,8 @@ const Hero: React.FC = () => {
             Status: Open to Work
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-bold text-neutral-900 tracking-tight font-serif mb-4 sm:mb-6">
-            IT Student.<br />
+          <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-bold text-neutral-900 tracking-tight font-serif mb-4 sm:mb-6">
+            <span className=" text-pink-500">IT Student.</span><br />
             Tech Enthusiast.<br />
             <SparklesText 
               text="Future Pro."

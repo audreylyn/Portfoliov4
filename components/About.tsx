@@ -38,7 +38,7 @@ const About: React.FC = () => {
           {/* Header layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 text-left items-start">
             <motion.div variants={itemVariants} className="lg:col-span-7">
-              <h3 className="text-[40px] sm:text-[56px] lg:text-[72px] xl:text-[80px] leading-[1.05] font-semibold tracking-tight uppercase">
+              <h3 className="text-[40px]  text-pink-500 sm:text-[56px] lg:text-[72px] xl:text-[80px] leading-[1.05] font-semibold tracking-tight uppercase">
                 About Me.
               </h3>
               <div className="mt-8 space-y-6 text-lg leading-relaxed text-black/70">

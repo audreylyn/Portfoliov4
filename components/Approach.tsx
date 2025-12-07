@@ -33,7 +33,7 @@ const InternshipInfo: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 text-left items-center">
           <div className="lg:col-span-7">
-            <h3 className="text-[32px] sm:text-[48px] lg:text-[64px] xl:text-[80px] leading-[0.9] uppercase font-semibold tracking-tight">
+            <h3 className="text-[32px] text-pink-500 sm:text-[48px] lg:text-[64px] xl:text-[80px] leading-[0.9] uppercase font-semibold tracking-tight">
               Internship Details.
             </h3>
           </div>
