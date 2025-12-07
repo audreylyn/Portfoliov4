@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sakura — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ["Playfair Display", "serif"],
+            },
+            colors: {
+              brand: {
+                accent: 'rgb(250, 112, 250)',
+              },
+              mint: {
+                50: "#F5FAF8",
+                100: "#EBF7F4",
+                200: "#D1EBE5",
+              },
+              sand: {
+                100: "#F3EFE9",
+                200: "#E6DDD0",
+                300: "#E3C9A6",
+                400: "#D4B996",
+                500: "#C0A076",
+                600: "#A48255",
+                900: "#8B6F47",
+              },
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "float-delayed": "float 6s ease-in-out 3s infinite",
+              "shimmer-btn": "shimmer-btn 4s linear infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+              "shimmer-btn": {
+                to: { transform: "translate(-50%, -50%) rotate(360deg)" },
+              },
+            },
+          }
+        },
+        plugins: [
+          function({ addUtilities }) {
+            const rotateValues = [0, 2.5, 4, 5, 10, 15, 20, 30, 45, 75];
+            const utilities = {};
+            
+            // Generate simple rotate utilities specifically for the Focus section
+            rotateValues.forEach((value) => {
+              utilities[`.rotate-x-${value}`] = { transform: `rotateX(${value}deg)` };
+              utilities[`.rotate-y-${value}`] = { transform: `rotateY(${value}deg)` };
+              utilities[`.rotate-z-${value}`] = { transform: `rotateZ(${value}deg)` };
+              utilities[`.-rotate-x-${value}`] = { transform: `rotateX(-${value}deg)` };
+              utilities[`.-rotate-y-${value}`] = { transform: `rotateY(-${value}deg)` };
+              utilities[`.-rotate-z-${value}`] = { transform: `rotateZ(-${value}deg)` };
+            });
+
+            const perspectiveUtilities = {
+              ".perspective-none": { perspective: "none" },
+              ".perspective-dramatic": { perspective: "100px" },
+              ".perspective-near": { perspective: "300px" },
+              ".perspective-normal": { perspective: "500px" },
+              ".perspective-midrange": { perspective: "800px" },
+              ".perspective-distant": { perspective: "1200px" },
+              ".perspective-1000": { perspective: "1000px" },
+            };
+
+            const transformStyleUtilities = {
+              ".transform-style-preserve-3d": { "transform-style": "preserve-3d" },
+              ".transform-style-flat": { "transform-style": "flat" },
+            };
+
+            addUtilities({
+              ...utilities,
+              ...perspectiveUtilities,
+              ...transformStyleUtilities,
+            });
+          }
+        ]
+      };
+    </script>
+    <style>
+      /* Custom utility for non-tailwind needs */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 30px -5px rgba(19, 78, 72, 0.05);
+      }
+
+      .tilt-card {
+        transition: transform 0.1s ease-out;
+        transform-style: preserve-3d;
+      }
+
+      /* Shiny CTA Button */
+      @property --gradient-angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+
+      .shiny-cta {
+        --gradient-angle: 0deg;
+        position: relative;
+        overflow: hidden;
+        border-radius: 9999px;
+        padding: 1rem 2.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        background: linear-gradient(#f3efe9, #f3efe9) padding-box,
+          conic-gradient(
+              from calc(var(--gradient-angle)),
+              transparent 0%,
+              #e3c9a6 5%,
+              #d4b996 15%,
+              #e3c9a6 30%,
+              transparent 40%,
+              transparent 100%
+            )
+            border-box;
+        border: 1px solid transparent;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+          0 10px 20px -5px rgba(212, 185, 150, 0.4);
+        outline: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+        animation: border-spin 3s linear infinite;
+      }
+
+      @keyframes border-spin {
+        to {
+          --gradient-angle: 360deg;
+        }
+      }
+
+      .shiny-cta:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 25px -5px rgba(212, 185, 150, 0.5);
+      }
+
+      .shiny-cta:active {
+        transform: scale(0.98);
+      }
+
+      .shiny-cta::before {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        background: radial-gradient(
+            circle at 2px 2px,
+            rgba(255, 255, 255, 0.8) 0.5px,
+            transparent 0
+          )
+          padding-box;
+        background-size: 4px 4px;
+        background-repeat: space;
+        mask-image: conic-gradient(
+          from calc(var(--gradient-angle) + 45deg),
+          black,
+          transparent 10% 90%,
+          black
+        );
+        border-radius: inherit;
+        opacity: 0.6;
+      }
+
+      .shiny-cta::after {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
+        aspect-ratio: 1;
+        background: linear-gradient(
+          -50deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+        opacity: 0.6;
+        animation: shimmer-btn 4s linear infinite;
+      }
+
+      .shiny-cta span {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^2.3.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-white text-black antialiased font-sans">
+    <div id="root"></div>
+  </body>
+</html>
