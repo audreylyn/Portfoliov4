@@ -112,7 +112,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-2 rounded-[2rem] overflow-hidden">
                   <div className="bg-gradient-to-t from-pink-900/20 via-transparent to-transparent absolute inset-0 z-10"></div>
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                    src="images/imgnibebe.jpeg"
                     alt="Samantha Jana Medina"
                     className="transform group-hover:scale-110 transition-transform duration-700 w-full h-full object-cover scale-105"
                   />
