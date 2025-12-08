@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-base sm:text-lg text-neutral-500 font-medium mb-8 sm:mb-10 leading-relaxed max-w-md">
-            Bachelor of Science in Information Technology – 3rd Year at PLV. Dedicated to IT operations, system maintenance, and support.
+            Bachelor of Science in Information Technology – 4th Year at PLV. Dedicated to IT operations, system maintenance, and support.
           </p>
 
           <div className="flex flex-col gap-4 mb-8 sm:mb-12 w-full sm:w-auto">

@@ -17,7 +17,7 @@ const projects: Project[] = [
     category: "Management",
     description: "Conducted comprehensive inventory of university computer and monitor assets, including photo documentation and asset coding.",
     tags: ["Asset Management", "Documentation", "Excel", "Inventory"],
-    image: "https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=800&q=80",
+    image: "/images/img1.jpg",
     details: [
       "Cataloged over 200+ IT assets across campus departments",
       "Standardized naming conventions for easier tracking",
@@ -30,7 +30,7 @@ const projects: Project[] = [
     category: "Maintenance",
     description: "Performed rigorous testing on hardware components including RAM modules, monitors, and motherboards to isolate faulty units.",
     tags: ["Hardware Repair", "Diagnostics", "System Testing"],
-    image: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80",
+    image: "/images/img2.jpg",
     details: [
       "Diagnosed failure points in 50+ laboratory workstations",
       "Replaced faulty RAM modules and power supply units",
@@ -43,7 +43,7 @@ const projects: Project[] = [
     category: "Infrastructure",
     description: "Mapped and documented network outlets across PLV buildings to support future troubleshooting and maintenance operations.",
     tags: ["Networking", "Cabling", "Infrastructure", "Mapping"],
-    image: "https://images.unsplash.com/photo-1544197150-b99a580bbc7c?w=800&q=80",
+    image: "/images/img3.jpg",
     details: [
       "Traced ethernet cabling routes in 3 main buildings",
       "Labelled wall ports and patch panels for consistency",
@@ -56,7 +56,7 @@ const projects: Project[] = [
     category: "Deployment",
     description: "Executed system backup, cloning, and re-imaging processes for laboratory computers to ensure consistent software environments.",
     tags: ["System Cloning", "Imaging", "Backup", "Software"],
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+    image: "/images/img4.jpg",
     details: [
       "Deployed standard OS image to 40+ computer lab units",
       "Configured user accounts and security policies",

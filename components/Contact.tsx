@@ -81,11 +81,11 @@ const Contact: React.FC = () => {
                  </p>
                  <div className="flex gap-3 justify-center md:justify-start">
                     {[
-                        { icon: Linkedin, href: "#" },
-                        { icon: Github, href: "#" },
-                        { icon: Facebook, href: "#" }
+                        { icon: Linkedin, href: "https://www.linkedin.com/in/ixvsam" },
+                        { icon: Github, href: "https://github.com/ixvsam" },
+                        { icon: Facebook, href: "https://www.facebook.com/samantha.medina.357622/" }
                     ].map((social, i) => (
-                        <a key={i} href={social.href} className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+                        <a key={i} href={social.href} target="_blank" rel="noreferrer noopener" aria-label={`Open ${social.href}`} className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
                             <social.icon size={18} />
                         </a>
                     ))}

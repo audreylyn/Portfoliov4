@@ -18,8 +18,8 @@ const highlights = [
       "https://cdn.midjourney.com/97f0525e-4b5b-46e1-a1ed-8ceb2043154b/0_0.png?w=800&q=80",
       "https://cdn.midjourney.com/35fb956a-cd8d-47f0-bc6e-414eedfef338/0_0.png?w=800&q=80",
       "https://cdn.midjourney.com/700e1a9e-8f1b-4d83-b511-21677612b8a6/0_0.png?w=800&q=80",
-      "https://images.unsplash.com/photo-1544197150-b99a580bbc7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef526b0042a0?w=800&q=80"
+      "https://cdn.midjourney.com/700e1a9e-8f1b-4d83-b511-21677612b8a6/0_0.png?w=800&q=80"
+      
     ]
   },
   {
