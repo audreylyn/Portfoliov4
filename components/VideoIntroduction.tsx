@@ -42,12 +42,15 @@ const VideoIntroduction: React.FC = () => {
       >
         <div className="absolute inset-0 z-0">
              {/* Replace the src below with your actual Vimeo embed URL */}
-             <iframe 
-                src="https://player.vimeo.com/video/1133695763?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                frameBorder="0" 
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                className="absolute top-0 left-0 w-full h-full"
-                title="Introduction Video"
+             <iframe
+               src="https://player.vimeo.com/video/1146965473?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+               width="400"
+               height="300"
+               frameBorder="0"
+               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+               referrerPolicy="strict-origin-when-cross-origin"
+               className="absolute top-0 left-0 w-full h-full"
+               title="Newbie Introduction Startup Video in Pastel Blue Pastel Yellow 2D Illustration Style"
              ></iframe>
         </div>
         
