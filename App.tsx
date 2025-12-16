@@ -8,6 +8,7 @@ import Approach from './components/Approach';
 import Testimonials from './components/Testimonials';
 import Focus from './components/Focus';
 import Contact from './components/Contact';
+import VideoIntroduction from './components/VideoIntroduction';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
+        <VideoIntroduction />
         <About />
         <FeaturedWork />
         <Approach />
