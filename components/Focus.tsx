@@ -15,10 +15,10 @@ const highlights = [
     ],
     tags: ["Network Map", "Cabling", "VLANs"],
     images: [
-      "https://cdn.midjourney.com/97f0525e-4b5b-46e1-a1ed-8ceb2043154b/0_0.png?w=800&q=80",
-      "https://cdn.midjourney.com/35fb956a-cd8d-47f0-bc6e-414eedfef338/0_0.png?w=800&q=80",
-      "https://cdn.midjourney.com/700e1a9e-8f1b-4d83-b511-21677612b8a6/0_0.png?w=800&q=80",
-      "https://cdn.midjourney.com/700e1a9e-8f1b-4d83-b511-21677612b8a6/0_0.png?w=800&q=80"
+      "/images/img5.jpg",
+      "/images/img6.jpg",
+      "/images/img7.jpg",
+      "/images/img8.jpg"
       
     ]
   },
@@ -34,10 +34,10 @@ const highlights = [
     ],
     tags: ["Hardware", "Imaging", "Support"],
     images: [
-      "https://cdn.midjourney.com/05ee647a-401b-40dd-985c-f81f5fcc0ac4/0_0.png?w=800&q=80",
-      "https://cdn.midjourney.com/7519434b-08d7-48f3-baf1-6ee3ec8ab7b0/0_0.png?w=800&q=80",
-      "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80"
+      "/images/img10.jpg",
+      "/images/img11.jpg",
+      "/images/img12.jpg",
+      "/images/img9.jpg"
     ]
   }
 ];

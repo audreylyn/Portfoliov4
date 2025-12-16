@@ -112,7 +112,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-2 rounded-[2rem] overflow-hidden">
                   <div className="bg-gradient-to-t from-pink-900/20 via-transparent to-transparent absolute inset-0 z-10"></div>
                   <img
-                    src="images/imgnibebe.jpeg"
+                    src="images/imgzam.jpg"
                     alt="Samantha Jana Medina"
                     className="transform group-hover:scale-110 transition-transform duration-700 w-full h-full object-cover scale-105"
                   />
@@ -124,23 +124,7 @@ const Hero: React.FC = () => {
                    </div>
                 </div>
 
-                {/* Floating Card 2: Status */}
-                <div className="absolute -left-6 sm:-left-12 bottom-20 sm:bottom-32 glass flex gap-3 transition-transform duration-300 group-hover:-translate-x-2 animate-float-delayed rounded-2xl p-2 sm:p-3 shadow-lg items-center">
-                  <div className="flex -space-x-2">
-                    <div className="flex text-[10px] font-bold text-neutral-700 w-7 sm:w-8 h-7 sm:h-8 bg-pink-100 border-white border-2 rounded-full items-center justify-center">
-                       <Award className="w-3 sm:w-4 h-3 sm:h-4 text-pink-500" />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-neutral-900">Dean's Lister</p>
-                    <div className="flex gap-1 items-center mt-0.5">
-                       <div className="h-1 w-12 bg-pink-200 rounded-full overflow-hidden">
-                          <div className="h-full w-[90%] bg-pink-500 rounded-full"></div>
-                       </div>
-                       <span className="text-[9px] text-pink-500 font-bold">1.25</span>
-                    </div>
-                  </div>
-                </div>
+                {/* (Dean's Lister card removed) */}
               </div>
             </div>
         </div>

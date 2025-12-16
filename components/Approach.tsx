@@ -26,7 +26,7 @@ const InternshipInfo: React.FC = () => {
         <div className="mb-6">
           <div className="flex items-center justify-between text-[13px] sm:text-sm font-medium uppercase tracking-tight text-black">
             <span>PLACEMENT</span>
-            <span>(02)</span>
+            <span>(03)</span>
           </div>
           <div className="mt-2 h-px w-full bg-black"></div>
         </div>

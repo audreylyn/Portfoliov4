@@ -89,7 +89,7 @@ const FeaturedWork: React.FC = () => {
         <div className="mb-6">
           <div className="flex text-[13px] sm:text-sm uppercase font-medium text-black tracking-tight items-center justify-between">
             <span>OUTPUTS</span>
-            <span>(03)</span>
+            <span>(02)</span>
           </div>
           <div className="mt-2 h-px w-full bg-black"></div>
         </div>
